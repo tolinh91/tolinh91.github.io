@@ -19,7 +19,7 @@ lin:
     facebook: /tolinh91/
     linkedin: tolinhtran
 
-theme: lin
+#theme: lin
 
 plugins:
  - jekyll-feed
