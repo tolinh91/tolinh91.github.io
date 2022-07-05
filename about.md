@@ -41,6 +41,6 @@ Phone number: +82 10 7383 0391
 [Google Site](https://sites.google.com/view/linhtttran/home?fbclid=IwAR1bmoEDfldmvPiXc_Uqwc8-Kh0MC5mKGZcxxqqBrfaQsbMCuoAQq_8UeXE)
 
 
-[Wordpress] (https://wordpress.com/mathcooking.wordpress.com)
+[Wordpress](https://wordpress.com/mathcooking.wordpress.com)
 
 
