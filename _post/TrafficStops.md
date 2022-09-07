@@ -86,6 +86,17 @@ female_and_speeding= ri[(ri['driver_gender']=="F") & (ri["violation_raw"]=="Spee
 male_and_speeding= ri[(ri['driver_gender']=="M") & (ri["violation_raw"]=="Speeding")]
 print(female_and_speeding.stop_outcome.value_counts(normalize=True))
 print(male_and_speeding.stop_outcome.value_counts(normalize=True))
+# Check the data type of 'search_conducted'
+print(ri.search_conducted.dtypes)
 
+# Calculate the search rate by counting the values
+print(ri.search_conducted.value_counts(normalize = True))
+
+# Calculate the search rate by taking the mean
+print(ri.search_conducted.mean())
+ri[ri['driver_gender']=="F"].mean()
+print(ri[ri['driver_gender']=="F"].search_conducted.mean())
+print(ri[ri['driver_gender']=="M"].search_conducted.mean())
+print(ri.groupby('driver_gender').search_conducted.mean())
 ```
 
