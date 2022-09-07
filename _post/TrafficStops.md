@@ -98,5 +98,7 @@ ri[ri['driver_gender']=="F"].mean()
 print(ri[ri['driver_gender']=="F"].search_conducted.mean())
 print(ri[ri['driver_gender']=="M"].search_conducted.mean())
 print(ri.groupby('driver_gender').search_conducted.mean())
+# Reverse the ordering to group by violation before gender
+print(ri.groupby(['violation','driver_gender']).search_conducted.mean())
 ```
 
