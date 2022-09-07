@@ -43,16 +43,31 @@ ri(DataFrame): the csvfile
 
 Returns:
 Figure out unmatching data types and change into another suitable ones.
-
+"""
 print(ri.is_arrested.head())
 ri['is_arrested']=ri.is_arrested.astype('bool')
 print(ri.is_arrested.head())
-"""
+
+combined = ri.stop_date.str.cat(ri.stop_time, sep=' ')
+ri['stop_datetime']=pd.to_datetime(combined)
+print(ri.dtypes)
+ri.set_index('stop_datetime',inplace=True)
+print(ri.index)
+print(ri.columns)
 ```
 Column 'is_arrested' was changed from type "objected" to "bool" instead.
 
 # Does gender effect to violations?
 When a driver is pulled over for speeding, many people believe that gender has an impact on whether the driver will receive a ticket or a warning. We will firgure out this assumption below.
+##
+```python
+print(ri.violation.value_counts())
+print(ri.violation.value_counts(normalize=True))
+female=ri[ri['driver_gender']=='F']
+male=ri[ri['driver_gender']=='M']
+print(female.violation.value_counts(normalize=True))
+print(male.violation.value_counts(normalize=True))
+```
 
 ## Comparing speeding outcomes by gender
 ```python
@@ -67,5 +82,10 @@ Returns:
 Count the stop outcomes for the female drivers and express them as proportions.
 Count the stop outcomes for the male drivers and express them as proportions.
 """
+female_and_speeding= ri[(ri['driver_gender']=="F") & (ri["violation_raw"]=="Speeding")]
+male_and_speeding= ri[(ri['driver_gender']=="M") & (ri["violation_raw"]=="Speeding")]
+print(female_and_speeding.stop_outcome.value_counts(normalize=True))
+print(male_and_speeding.stop_outcome.value_counts(normalize=True))
+
 ```
 
