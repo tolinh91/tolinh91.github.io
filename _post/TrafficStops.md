@@ -51,4 +51,21 @@ print(ri.is_arrested.head())
 ```
 Column 'is_arrested' was changed from type "objected" to "bool" instead.
 
+# Does gender effect to violations?
+When a driver is pulled over for speeding, many people believe that gender has an impact on whether the driver will receive a ticket or a warning. We will firgure out this assumption below.
+
+## Comparing speeding outcomes by gender
+```python
+"""
+Compare the number of violations commited by female and male drivers.
+Args:
+ri (DataFrame): the csv file to read
+female_and_speeding (DataFrame): female drivers who were stopped for speeding
+male_and_speeding (DataFrame): male drivers who were stopped for speeding
+
+Returns:
+Count the stop outcomes for the female drivers and express them as proportions.
+Count the stop outcomes for the male drivers and express them as proportions.
+"""
+```
 
