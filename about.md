@@ -13,7 +13,7 @@ Regards to Pure Mathematics, I focus on investigating the behaviors of operators
 About Data, I am interested in translating data to visual models relating to financial and social issues.
 
 
-My Ph.D. is in the invariance of generalized hyperbolic operators under Aluthge transforms and solving Invariant Subspace Problem for Shadowing Operators from Chungnam National University (combined program). I earned aa bachelor’s degree in Advance Mathematics at University of Science, Vietnam National University, Hanoi.
+My Ph.D. is in the invariance of generalized hyperbolic operators under Aluthge transforms and solving Invariant Subspace Problem for Shadowing Operators from Chungnam National University (combined program). I earned a bachelor’s degree in Advance Mathematics at University of Science, Vietnam National University, Hanoi.
 
 
 I am also a Data Analyst and Data Scientist. My recent projects are updated here.
